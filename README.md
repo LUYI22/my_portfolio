@@ -1,2 +1,2 @@
-# Landing-Page
-Live Page: https://luyi22.github.io/Landing-Page/ 
+# Portfolio-Page
+Live Page: https://luyi22.github.io/Portfolio-Page/ 

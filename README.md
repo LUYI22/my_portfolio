@@ -18,5 +18,5 @@
 - `index.html` — portfolio content and page structure
 - `assets/css/portfolio.css` — portfolio-specific styling
 - `assets/css/main.css` and `assets/js/` — HTML5 UP template styles and scripts
-- `images/headshot.jpeg` — profile photo
+- `images/headshot.jpeg` — profile photo shown in the intro
 - `LuAnna_Resume.pdf` — downloadable resume

@@ -9,7 +9,6 @@
 }
 
 html {
-	scroll-behavior: smooth;
 	scroll-padding-top: 5rem;
 }
 
@@ -51,7 +50,7 @@ p {
 }
 
 .container {
-	max-width: 76rem;
+	max-width: 96rem;
 	width: calc(100% - 5rem);
 }
 
@@ -184,7 +183,7 @@ p {
 }
 
 .hero-copy {
-	max-width: 55rem;
+	max-width: 72rem;
 }
 
 .eyebrow,
@@ -228,7 +227,7 @@ p {
 	font-size: 1.13rem;
 	line-height: 1.8;
 	margin: 0;
-	max-width: 44rem;
+	max-width: 64rem;
 }
 
 .hero-lede p {
@@ -285,7 +284,7 @@ p {
 
 .section-heading {
 	margin-bottom: 2rem;
-	max-width: 43rem;
+	max-width: 58rem;
 }
 
 .section-heading .eyebrow {
@@ -458,7 +457,7 @@ p {
 }
 
 .project-copy {
-	max-width: 49rem;
+	max-width: 68rem;
 }
 
 .project-copy > p:not(.experience-type) {
@@ -489,7 +488,7 @@ p {
 }
 
 .about-grid > div > p {
-	max-width: 39rem;
+	max-width: 52rem;
 }
 
 .about-grid .section-heading {

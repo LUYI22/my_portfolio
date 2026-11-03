@@ -8,19 +8,8 @@
 
 	var $window = $(window),
 		$body = $('body'),
-		$header = $('#header'),
-		$titleBar = null,
-		$nav = $('#nav'),
-		$wrapper = $('#wrapper');
-
-	// Breakpoints.
-		breakpoints({
-			xlarge:   [ '1281px',  '1680px' ],
-			large:    [ '1025px',  '1280px' ],
-			medium:   [ '737px',   '1024px' ],
-			small:    [ '481px',   '736px'  ],
-			xsmall:   [ null,      '480px'  ],
-		});
+		$siteHeader = $('#site-header'),
+		$nav = $('#nav');
 
 	// Play initial animations on page load.
 		$window.on('load', function() {
@@ -54,9 +43,7 @@
 
 			}
 
-	// Header Panel.
-
-		// Nav.
+	// Navigation.
 			var $nav_a = $nav.find('a');
 
 			$nav_a
@@ -121,38 +108,12 @@
 
 				});
 
-		// Title Bar.
-			$titleBar = $(
-				'<div id="titleBar">' +
-					'<a href="#header" class="toggle"></a>' +
-					'<span class="title">' + $('#logo').html() + '</span>' +
-				'</div>'
-			)
-				.appendTo($body);
-
-		// Panel.
-			$header
-				.panel({
-					delay: 500,
-					hideOnClick: true,
-					hideOnSwipe: true,
-					resetScroll: true,
-					resetForms: true,
-					side: 'right',
-					target: $body,
-					visibleClass: 'header-visible'
-				});
-
 	// Scrolly.
 		$('.scrolly').scrolly({
-			speed: 150,
+			speed: 120,
+			easing: 'linear',
 			offset: function() {
-
-				if (breakpoints.active('<=medium'))
-					return $titleBar.height();
-
-				return 0;
-
+				return $siteHeader.outerHeight();
 			}
 		});
 

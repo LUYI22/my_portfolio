@@ -165,7 +165,7 @@ p {
 .hero-heading {
 	align-items: center;
 	display: flex;
-	gap: 1rem;
+	gap: 2rem;
 	justify-content: space-between;
 }
 
@@ -174,11 +174,11 @@ p {
 }
 
 .profile-photo {
-	aspect-ratio: 3 / 4;
-	border: 0.3rem solid #fff;
+	aspect-ratio: 1;
 	border-radius: 50%;
 	box-shadow: 0 0.5rem 1.5rem rgba(23, 45, 53, 0.15);
 	flex: 0 0 auto;
+	height: auto;
 	object-fit: cover;
 	width: clamp(5rem, 12vw, 8rem);
 }

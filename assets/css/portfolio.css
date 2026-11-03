@@ -162,6 +162,27 @@ p {
 	margin: 0 0 1.5rem;
 }
 
+.hero-heading {
+	align-items: center;
+	display: flex;
+	gap: 1rem;
+	justify-content: space-between;
+}
+
+.hero-heading h2 {
+	flex: 1;
+}
+
+.profile-photo {
+	aspect-ratio: 3 / 4;
+	border: 0.3rem solid #fff;
+	border-radius: 50%;
+	box-shadow: 0 0.5rem 1.5rem rgba(23, 45, 53, 0.15);
+	flex: 0 0 auto;
+	object-fit: cover;
+	width: clamp(5rem, 12vw, 8rem);
+}
+
 .education-column .education-card {
 	margin-top: 1.5rem;
 }

@@ -1,11 +1,6 @@
 # Anna Lu — Portfolio
 
-Personal portfolio for Anna Lu, a Rutgers University Honors College student
-studying Computer Science and Economics. The site highlights experience in
-software engineering, AI-enabled tools, IT, data analytics, and selected
-projects.
-
-**Live site:** [luyi22.github.io/Portfolio-Page](https://luyi22.github.io/Portfolio-Page/)
+**Live site:** [[luyi22.github.io/Portfolio-Page](https://luyi22.github.io/Portfolio-Page/)](https://luyi22.github.io/my_portfolio/)
 
 ## What’s on the site
 
@@ -37,13 +32,3 @@ scripts, and profile photo are served from the repository.
 - `assets/css/main.css` and `assets/js/` — HTML5 UP template styles and scripts
 - `images/headshot.jpeg` — profile photo
 - `LuAnna_Resume.pdf` — downloadable resume
-
-## License
-
-The original site is based on the
-[Read Only template by HTML5 UP](https://html5up.net/read-only), which is
-licensed under the
-[Creative Commons Attribution 3.0 Unported license](https://creativecommons.org/licenses/by/3.0/).
-`LICENSE.txt` is retained to include the applicable license terms and
-attribution. The portfolio's original content and personal assets are not
-relicensed by that template license.

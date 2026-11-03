@@ -1,6 +1,6 @@
 # Anna Lu — Portfolio
 
-**Live site:** [[luyi22.github.io/Portfolio-Page](https://luyi22.github.io/Portfolio-Page/)](https://luyi22.github.io/my_portfolio/)
+**Live site:** (https://luyi22.github.io/Portfolio-Page/)
 
 ## What’s on the site
 

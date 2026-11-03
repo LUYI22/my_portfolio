@@ -146,8 +146,24 @@ p {
 	padding-top: 6.4rem !important;
 }
 
-.hero-copy {
-	max-width: 72rem;
+.overview-grid {
+	align-items: stretch;
+	display: grid;
+	gap: clamp(2rem, 6vw, 6rem);
+	grid-template-columns: minmax(0, 1fr) minmax(18rem, 0.75fr);
+}
+
+.hero-copy h2 {
+	color: var(--ink);
+	font-size: clamp(2.6rem, 5vw, 4.65rem);
+	font-weight: 700;
+	letter-spacing: -0.065em;
+	line-height: 1.08;
+	margin: 0 0 1.5rem;
+}
+
+.education-column .education-card {
+	margin-top: 1.5rem;
 }
 
 .eyebrow,
@@ -171,35 +187,65 @@ p {
 	width: 0.55rem;
 }
 
-.hero-copy h2 {
-	color: var(--ink);
-	font-size: clamp(2.6rem, 5vw, 4.65rem);
-	font-weight: 700;
-	letter-spacing: -0.065em;
-	line-height: 1.08;
-	margin: 0 0 1.5rem;
-}
-
-.hero-copy h2 span,
 .contact-card h3 span {
 	color: var(--accent-dark);
 	display: block;
 }
 
-.hero-lede {
+.overview-copy {
 	color: #586d72;
 	font-size: 1.13rem;
 	line-height: 1.8;
-	margin: 0;
-	max-width: 64rem;
+	margin: 3rem auto 0;
+	max-width: 72rem;
 }
 
-.hero-lede p {
+.overview-copy p {
 	margin-bottom: 0.9rem;
 }
 
-.hero-lede p:last-child {
+.overview-copy p:last-of-type {
 	margin-bottom: 0;
+}
+
+.personal-card {
+	background:
+		radial-gradient(ellipse at 100% 0%, rgba(66, 212, 177, 0.2), transparent 18rem),
+		#172f36;
+	border: 1px solid rgba(66, 212, 177, 0.22);
+	border-radius: 1rem;
+	box-shadow: 0 16px 40px rgba(23, 45, 53, 0.1);
+	color: #bfd0cf;
+	padding: clamp(1.5rem, 3vw, 2.4rem);
+}
+
+.personal-card .eyebrow {
+	color: #71ddc3;
+}
+
+.personal-card h3 {
+	color: #fff;
+	font-size: 1.5rem;
+	letter-spacing: -0.04em;
+	margin: 0 0 0.6rem;
+}
+
+.personal-card > p:not(.eyebrow) {
+	color: #c1d0d0;
+	font-size: 0.9rem;
+	line-height: 1.7;
+	margin: 0;
+}
+
+.personal-card .tag-list {
+	gap: 0.5rem;
+	margin-top: 1.35rem;
+}
+
+.personal-card .tag-list span {
+	background: rgba(255, 255, 255, 0.09);
+	border-color: rgba(255, 255, 255, 0.12);
+	color: #e5efed;
 }
 
 .hero-actions {
@@ -444,37 +490,17 @@ p {
 	margin-top: 0.5rem;
 }
 
-.about-grid {
-	align-items: start;
-	display: grid;
-	gap: 3rem;
-	grid-template-columns: minmax(0, 1.2fr) minmax(17rem, 0.8fr);
-	margin-top: 3.5rem;
-}
-
-.about-grid > div > p {
-	max-width: 52rem;
-}
-
-.about-grid .section-heading {
-	margin-bottom: 1rem;
-}
-
-.subheading {
-	font-size: 0.9rem;
-	margin: 1.6rem 0 0;
-}
-
-.interest-list {
-	margin-top: 0.65rem;
-}
-
 .education-card {
+	display: grid;
+	gap: 0 2rem;
+	grid-template-columns: minmax(0, 1fr) minmax(18rem, 0.8fr);
 	padding: 1.7rem;
+	width: 100%;
 }
 
 .education-card .experience-type {
 	margin-bottom: 0.55rem;
+	grid-column: 1 / -1;
 }
 
 .education-card h4 {
@@ -507,6 +533,7 @@ p {
 .honors-note {
 	border-top: 1px solid var(--line);
 	font-size: 0.76rem;
+	grid-column: 1 / -1;
 	line-height: 1.7;
 	margin: 0.3rem 0 0;
 	padding-top: 0.85rem;
@@ -597,6 +624,20 @@ p {
 		overflow-x: clip;
 	}
 
+	.overview-grid {
+		grid-template-columns: minmax(0, 1fr) minmax(16rem, 0.85fr);
+		gap: 2rem;
+	}
+
+	.education-card {
+		grid-template-columns: 1fr;
+	}
+
+	.education-card .experience-type,
+	.honors-note {
+		grid-column: auto;
+	}
+
 	#wrapper {
 		padding: 0;
 	}
@@ -660,17 +701,22 @@ p {
 		padding: 3.5rem 0;
 	}
 
+	.overview-grid {
+		grid-template-columns: 1fr;
+	}
+
 	#intro > .container {
 		padding-bottom: 2.4rem !important;
 		padding-top: 4rem !important;
 	}
 
-	.hero-copy h2 {
-		font-size: clamp(2.45rem, 11vw, 3.5rem);
+	.overview-copy {
+		font-size: 1rem;
+		margin-top: 2rem;
 	}
 
-	.hero-lede {
-		font-size: 1rem;
+	.hero-copy h2 {
+		font-size: clamp(2.45rem, 11vw, 3.5rem);
 	}
 
 	.section-heading h3 {
@@ -701,11 +747,6 @@ p {
 
 	.project-mark {
 		margin-bottom: 1.2rem;
-	}
-
-	.about-grid {
-		gap: 1.5rem;
-		grid-template-columns: 1fr;
 	}
 
 	.contact-card {

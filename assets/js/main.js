@@ -110,6 +110,7 @@
 
 	// Scrolly.
 		$('.scrolly').scrolly({
+			parent: $(document.scrollingElement),
 			speed: 120,
 			easing: 'linear',
 			offset: function() {

@@ -13,18 +13,6 @@
 - Education, interests, and contact links
 - Downloadable resume and profile photo
 
-## Preview locally
-
-This is a static site; no build step or package installation is required.
-From the repository root, start a local web server:
-
-```sh
-python3 -m http.server 8000
-```
-
-Then open <http://localhost:8000> in a browser. The resume, stylesheets,
-scripts, and profile photo are served from the repository.
-
 ## Project structure
 
 - `index.html` — portfolio content and page structure

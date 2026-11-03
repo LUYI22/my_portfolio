@@ -1,2 +1,49 @@
-# Portfolio-Page
-Live Page: https://luyi22.github.io/Portfolio-Page/ 
+# Anna Lu — Portfolio
+
+Personal portfolio for Anna Lu, a Rutgers University Honors College student
+studying Computer Science and Economics. The site highlights experience in
+software engineering, AI-enabled tools, IT, data analytics, and selected
+projects.
+
+**Live site:** [luyi22.github.io/Portfolio-Page](https://luyi22.github.io/Portfolio-Page/)
+
+## What’s on the site
+
+- Professional experience and technical toolkit
+- Selected projects:
+  - [Bookmark Manager](https://github.com/LUYI22/Bookmark-Manger) — a
+    self-hosted JavaScript app with an Express API and SQLite database
+  - [RUMAPS](https://github.com/LUYI22/RUMAPs) — an interactive Rutgers campus
+    map using Java graph algorithms
+- Education, interests, and contact links
+- Downloadable resume and profile photo
+
+## Preview locally
+
+This is a static site; no build step or package installation is required.
+From the repository root, start a local web server:
+
+```sh
+python3 -m http.server 8000
+```
+
+Then open <http://localhost:8000> in a browser. The resume, stylesheets,
+scripts, and profile photo are served from the repository.
+
+## Project structure
+
+- `index.html` — portfolio content and page structure
+- `assets/css/portfolio.css` — portfolio-specific styling
+- `assets/css/main.css` and `assets/js/` — HTML5 UP template styles and scripts
+- `images/headshot.jpeg` — profile photo
+- `LuAnna_Resume.pdf` — downloadable resume
+
+## License
+
+The original site is based on the
+[Read Only template by HTML5 UP](https://html5up.net/read-only), which is
+licensed under the
+[Creative Commons Attribution 3.0 Unported license](https://creativecommons.org/licenses/by/3.0/).
+`LICENSE.txt` is retained to include the applicable license terms and
+attribution. The portfolio's original content and personal assets are not
+relicensed by that template license.

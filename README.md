@@ -10,7 +10,7 @@
     self-hosted JavaScript app with an Express API and SQLite database
   - [RUMAPS](https://github.com/LUYI22/RUMAPs_Public) — an interactive Rutgers campus
     map using Java graph algorithms
-  - [AI Chatbox](https://github.com/LUYI22/AI_Chatbot) — a Next.js chat interface
+  - [AI Chatbot](https://github.com/LUYI22/AI_Chatbot) — a Next.js chat interface
     that streams AI answers through Puter.js
   - [Mallow & Mint Café](https://github.com/LUYI22/cafe) — a Java Swing café
     game with interactive customer seating and serving
